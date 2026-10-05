@@ -11,8 +11,8 @@ Finds malware "phoning home" in network logs, explains every finding in plain En
 
 <a href="https://github.com/jhunte-sec/beacon-hunter">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/beacon-hunter-dark.png?v=b747c3af">
-  <img alt="beacon-hunter report on a real malware capture: 2 pairs worth a look, and a beacon map where the malware's two command servers stand out as solid timers" src="assets/beacon-hunter-light.png?v=a4dc4d4a" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/beacon-hunter-dark.png?v=78e20556">
+  <img alt="beacon-hunter report on a real malware capture: 2 pairs worth a look, and a beacon map where the malware's two command servers stand out as solid timers" src="assets/beacon-hunter-light.png?v=c36aae26" width="100%">
 </picture>
 </a>
 
