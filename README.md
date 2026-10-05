@@ -13,11 +13,11 @@ I'm aiming at SOC and blue team roles.
 ## Projects
 
 ### [beacon-hunter](https://github.com/jhunte-sec/beacon-hunter)
-Finds command-and-control beaconing in Zeek logs and explains every finding in plain English, with a one-file HTML report for the ticket.
+Finds malware "phoning home" in network logs and explains every finding in plain English, with a one-file HTML report for the ticket. Reads Zeek, Suricata, Sysmon, CSV exports and raw packet captures.
 
-The standard way to spot a beacon is to check whether the gaps between connections are regular. Real implants break that: they miss check-ins, and some repeat a multi-step retry cycle instead of a single interval. beacon-hunter handles both. On real malware traffic from the IoT-23 dataset, it turned two C2 channels that scored 0.35 and 0.65 under the standard method into clear 1.00 timers, without adding a single false positive across 1,500 simulated non-beacon samples. The write-up covers what it misses, too.
+The standard way to spot a beacon is to check whether the gaps between connections are regular. Real implants break that: they miss check-ins, and when their command server is dead, the operating system's retries scramble the timing in the logs. beacon-hunter handles both. On real malware traffic from the IoT-23 dataset, it turned two C2 channels that scored 0.35 and 0.65 under the standard method into clear 1.00 timers, without adding a single false positive across 1,500 simulated non-beacon samples. The write-up covers what it misses, and a mistake I caught and corrected along the way.
 
-`Python` · `Zeek` · evaluated on labeled malware captures
+`Python` · `Zeek` · `Suricata` · `Sysmon` · `pcap` · evaluated on labeled malware captures
 
 ---
 
