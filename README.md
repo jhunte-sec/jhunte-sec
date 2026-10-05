@@ -1,47 +1,52 @@
-# Jason Hunte
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg?v=e0d37cf9">
+  <img alt="Jason Hunte: blue team and detection engineering. Security student at Seneca Polytechnic, Ontario, Canada." src="assets/banner-light.svg?v=4d2b5cad" width="100%">
+</picture>
 
-**Security student focused on blue team work: I build detections, tune them until they're quiet, and write up what they catch.**
+**I build detections, tune them until they're quiet, and write up what they catch.** Aiming at SOC and blue team roles. Best way to reach me: [LinkedIn](https://www.linkedin.com/in/jason-hunte-6546a2270/).
 
-I'm aiming at SOC and blue team roles.
+## Featured: [beacon-hunter](https://github.com/jhunte-sec/beacon-hunter)
 
-- Studying at Seneca Polytechnic
-- Most of my time goes into detection: SIEM rules, IDS tuning, and cutting false positives
-- Best way to reach me: [LinkedIn](https://www.linkedin.com/in/jason-hunte-6546a2270/)
+Finds malware "phoning home" in network logs, explains every finding in plain English, and writes a one-file report you can attach to a ticket. Reads Zeek, Suricata, Sysmon, CSV exports and raw packet captures.
 
----
+<a href="https://github.com/jhunte-sec/beacon-hunter">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/beacon-hunter-dark.png?v=b747c3af">
+  <img alt="beacon-hunter report on a real malware capture: 2 pairs worth a look, and a beacon map where the malware's two command servers stand out as solid timers" src="assets/beacon-hunter-light.png?v=a4dc4d4a" width="100%">
+</picture>
+</a>
 
-## Projects
+| | |
+|---|---|
+| **0.35 → 1.00** | Mirai botnet's real command channel: missed by the standard method, flagged by beacon-hunter |
+| **9 of 9** | conversations rebuilt from raw packets that match Zeek's own log exactly |
+| **0 of 1,500** | simulated non-beacon samples falsely flagged |
 
-### [beacon-hunter](https://github.com/jhunte-sec/beacon-hunter)
-Finds malware "phoning home" in network logs and explains every finding in plain English, with a one-file HTML report for the ticket. Reads Zeek, Suricata, Sysmon, CSV exports and raw packet captures.
+The [write-up](https://github.com/jhunte-sec/beacon-hunter/blob/main/docs/evaluation.md) covers what it misses, and a mistake I caught and corrected along the way.
 
-The standard way to spot a beacon is to check whether the gaps between connections are regular. Real implants break that: they miss check-ins, and when their command server is dead, the operating system's retries scramble the timing in the logs. beacon-hunter handles both. On real malware traffic from the IoT-23 dataset, it turned two C2 channels that scored 0.35 and 0.65 under the standard method into clear 1.00 timers, without adding a single false positive across 1,500 simulated non-beacon samples. The write-up covers what it misses, and a mistake I caught and corrected along the way.
+## My detection lab
 
-`Python` · `Zeek` · `Suricata` · `Sysmon` · `pcap` · evaluated on labeled malware captures
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/lab-dark.svg?v=be1db904">
+  <img alt="Lab architecture: an outside attacker VM, a router and firewall between seven zones (DMZ edge, App, Internal, SOC, User, Admin, Remote), network taps from the SOC's IDS into the DMZ, App and Internal zones, and Wazuh agents on every host" src="assets/lab-light.svg?v=01e3df77" width="100%">
+</picture>
 
----
+Built for a network security course at Seneca, and run like a small company network: attacks come only from outside, through the DMZ, and every one has to show up as a specific alert someone can act on.
 
-## What I work on
-
-### Enterprise detection lab (course project)
-A multi-VM Windows and Active Directory network with a full monitoring stack, built for a network security course at Seneca.
-
-- **Sensors and SIEM:** Zeek, Suricata with ET Open rules, and Wazuh, with custom detection rules tuned for the lab
-- **Hardening:** brought the domain controllers to a CIS Level 1 baseline and measured the before and after
-- **The standard I held it to:** one attack should raise one specific alert, not a wall of noise. Getting there was most of the work.
-- **Triage:** a scripted triage queue and a weekly threat hunt, so alerts get closed with a reason instead of ignored
+- **Detections tuned** in Wazuh, Zeek and Suricata so each attack raises one clear alert instead of a pile of noise
+- **A triage queue and a weekly threat hunt**, so alerts get closed with a reason instead of ignored
+- **Hardening, measured:** domain controllers taken from 28% to 92% on the CIS Level 1 benchmark, plus AppLocker and a three-tier PKI
 
 > The lab itself stays private (it's coursework and holds credentials), but I'm glad to demo it or walk through any rule.
 
-### Incident response and forensics
-Coursework in digital forensics and incident response: evidence collection, triage, and writing findings up the way a client report needs them.
+## Also
 
----
+- **Incident response and forensics:** coursework in evidence collection, triage, and writing findings up the way a client report needs them
+- **Up next: SOC-in-a-box**, a tool that takes a packet capture or Windows logs and turns them into a full case report
 
 ## Tools I use
 
-`Wazuh` · `Zeek` · `Suricata` · `Active Directory` · `Python` · `Bash` · `PowerShell` · `VMware`
-
----
-
-*Open to junior SOC and blue team roles.*
+**Detection and monitoring:** `Wazuh` · `Zeek` · `Suricata`<br>
+**Windows and identity:** `Active Directory` · `Group Policy` · `PKI`<br>
+**Code:** `Python` · `Bash` · `PowerShell`<br>
+**Lab:** `VMware`
