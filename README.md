@@ -45,7 +45,7 @@ Built for a network security course at Seneca, and run like a small company netw
 
 ## Tools I use
 
-**Detection and monitoring:** `Wazuh` · `Zeek` · `Suricata`<br>
+**Detection and monitoring:** `Wazuh` · `Zeek` · `Suricata` · `Sysmon`<br>
 **Windows and identity:** `Active Directory` · `Group Policy` · `PKI`<br>
 **Code:** `Python` · `Bash` · `PowerShell`<br>
 **Lab:** `VMware`
