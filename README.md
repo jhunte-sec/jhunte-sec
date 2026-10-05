@@ -1,17 +1,16 @@
 # Jason Hunte
 
-**Security student working both sides: I attack in labs to learn what defenders have to catch, then build and tune the detections that catch it.**
+**Security student focused on blue team work: I build detections, tune them until they're quiet, and write up what they catch.**
 
-I'm aiming at SOC and blue team work, with enough offensive practice to know what an alert looks like from the other side.
+I'm aiming at SOC and blue team roles.
 
 - Studying at Seneca Polytechnic
 - Most of my time goes into detection: SIEM rules, IDS tuning, and cutting false positives
-- On the offensive side I work through TryHackMe boxes and my own lab
 - Best way to reach me: [LinkedIn](https://www.linkedin.com/in/jason-hunte-6546a2270/)
 
 ---
 
-## Blue team
+## What I work on
 
 ### Enterprise detection lab (course project)
 A multi-VM Windows and Active Directory network with a full monitoring stack, built for a network security course at Seneca.
@@ -28,18 +27,9 @@ Coursework in digital forensics and incident response: evidence collection, tria
 
 ---
 
-## Red team
-
-### ctf-mcp (private for now)
-A tool server I built for authorized CTF practice. It gives an assistant a small set of recon tools, and the part I care about most is the guardrails: nothing is in scope until a person sets one target, and anything beyond reconnaissance stays locked until a person arms it. Every action is logged.
-
-> Happy to demo it. I'll publish it once it's cleaned up.
-
----
-
 ## Tools I use
 
-`Wazuh` · `Zeek` · `Suricata` · `Active Directory` · `nmap` · `Python` · `Bash` · `PowerShell` · `VMware`
+`Wazuh` · `Zeek` · `Suricata` · `Active Directory` · `Python` · `Bash` · `PowerShell` · `VMware`
 
 ---
 
