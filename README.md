@@ -3,7 +3,7 @@
   <img alt="Jason Hunte: blue team and detection engineering. Security student at Seneca Polytechnic, Ontario, Canada." src="assets/banner-light.svg?v=3fbc96e7" width="100%">
 </picture>
 
-**I build detections, tune them until they're quiet, and write up what they catch.** Aiming at SOC and blue team roles. Best way to reach me: [LinkedIn](https://www.linkedin.com/in/jason-hunte-6546a2270/).
+**I build detections, tune them until they're quiet, and write up what they catch.** Aiming at SOC and blue team roles. Best way to reach me: [LinkedIn](https://www.linkedin.com/in/jhunte-sec/).
 
 ## Featured: [beacon-hunter](https://github.com/jhunte-sec/beacon-hunter)
 
@@ -53,7 +53,7 @@ Built for a network security course at Seneca. Attacks come only from outside, t
   <img alt="Detection and monitoring: Wazuh, Zeek, Suricata, Sysmon. Windows and identity: Active Directory, Group Policy, PKI. Code: Python, Bash, PowerShell. Lab: VMware, Windows Server, Ubuntu, WireGuard" src="assets/toolbox-light.svg?v=8b38a6cf" width="100%">
 </picture>
 
-<a href="https://www.linkedin.com/in/jason-hunte-6546a2270/">
+<a href="https://www.linkedin.com/in/jhunte-sec/">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cta-dark.svg?v=65c9fc42">
   <img alt="Open to junior SOC and blue team roles. Connect on LinkedIn" src="assets/cta-light.svg?v=e3886420" width="100%">
