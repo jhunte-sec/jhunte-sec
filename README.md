@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg?v=e0d37cf9">
-  <img alt="Jason Hunte: blue team and detection engineering. Security student at Seneca Polytechnic, Ontario, Canada." src="assets/banner-light.svg?v=4d2b5cad" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg?v=72e30c58">
+  <img alt="Jason Hunte: blue team and detection engineering. Security student at Seneca Polytechnic, Ontario, Canada." src="assets/banner-light.svg?v=3fbc96e7" width="100%">
 </picture>
 
 **I build detections, tune them until they're quiet, and write up what they catch.** Aiming at SOC and blue team roles. Best way to reach me: [LinkedIn](https://www.linkedin.com/in/jason-hunte-6546a2270/).
@@ -16,11 +16,10 @@ Finds malware "phoning home" in network logs, explains every finding in plain En
 </picture>
 </a>
 
-| | |
-|---|---|
-| **0.35 → 1.00** | Mirai botnet's real command channel: missed by the standard method, flagged by beacon-hunter |
-| **9 of 9** | conversations rebuilt from raw packets that match Zeek's own log exactly |
-| **0 of 1,500** | simulated non-beacon samples falsely flagged |
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/highlights-dark.svg?v=b24be929">
+  <img alt="0.35 to 1.00 on Mirai botnet's real command channel; 9 of 9 conversations rebuilt from raw packets match Zeek's own log; 0 of 1,500 false alarms on simulated non-beacon traffic" src="assets/highlights-light.svg?v=15ffa717" width="100%">
+</picture>
 
 The [write-up](https://github.com/jhunte-sec/beacon-hunter/blob/main/docs/evaluation.md) covers what it misses, and a mistake I caught and corrected along the way.
 
